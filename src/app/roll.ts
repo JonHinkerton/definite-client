@@ -1,7 +1,9 @@
 export class Roll {
-  id: number;
+  timestamp: string;
+  channel: string;
+  user: string;
   count: number;
   shape: number;
   modifier: number;
-  result: string;
+  result: number;
 }
