@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { MatFormFieldModule, MatInputModule, MatSelectModule } from '@angular/material';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
 
 import { AppComponent } from './app.component';
 import { RollerComponent } from './roller/roller.component';
@@ -13,7 +16,7 @@ import { RollerComponent } from './roller/roller.component';
     RollerComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, MatFormFieldModule, MatInputModule, MatSelectModule, BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

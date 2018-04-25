@@ -7,3 +7,7 @@ export class Roll {
   modifier: number;
   result: number;
 }
+
+export class Counts { value: number; }
+
+export class Shapes { value: number; }

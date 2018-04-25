@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Roll } from '../roll';
+import { Shapes } from '../roll';
 
 @Component({
   selector: 'app-roller',
@@ -8,12 +9,14 @@ import { Roll } from '../roll';
 })
 export class RollerComponent implements OnInit {
 
-  roll: Roll[];
+  shapes: Shapes[] = [
+      {value: 4},{value: 6},{value: 8},{value: 10},{value: 12},{value: 20}
+  ]
 
   constructor() { }
 
   ngOnInit() {
-    
+
   }
 
   getRoll(): void {
